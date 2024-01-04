@@ -1,11 +1,11 @@
 # dotfiles
-haton14のdotfiles for Ubuntu
+shutoのdotfiles for Ubuntu
 
 ## pre setup
 ```bash
-sudo apt update
-sudo apt upgrade
-sudo apt install gh make language-pack-ja
+brew update
+brew install gh make
+
 # gh経由でGitHubのssh鍵を作成する
 gh auth login
 ```

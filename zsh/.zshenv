@@ -20,4 +20,4 @@ if command -v npm &> /dev/null; then
 fi
 
 # Rust
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

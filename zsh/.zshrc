@@ -54,3 +54,11 @@ bindkey '^Ih' widget::history
 
 # Rye
 source "$HOME/.rye/env"
+
+# alias
+alias ll='ls -ltra'
+alias gst='git status'
+alias gadd='git add'
+alias gpush='git push'
+alias gcm='git commit'
+alias gch='git checkout'
