@@ -63,3 +63,19 @@ alias gpush='git push'
 alias gpull='git pull'
 alias gcm='git commit -m'
 alias gch='git checkout'
+
+# ブランチの切り替え
+function git-branch-fzf() {
+  local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | perl -pne 's{^refs/heads/}{}' | fzf --query "$LBUFFER")
+
+  if [ -n "$selected_branch" ]; then
+    BUFFER="git switch ${selected_branch}"
+    zle accept-line
+  fi
+
+  zle reset-prompt
+}
+
+# tab+b
+zle -N git-branch-fzf
+bindkey '^Ib' git-branch-fzf

@@ -1,5 +1,5 @@
 # dotfiles
-shutoのdotfiles for Ubuntu
+shutoのdotfiles for mac
 
 ## pre setup
 ```bash
