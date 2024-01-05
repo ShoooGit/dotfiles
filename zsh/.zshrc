@@ -63,6 +63,8 @@ alias gpush='git push'
 alias gpull='git pull'
 alias gcm='git commit -m'
 alias gch='git checkout'
+alias tf='terraform'
+alias tfmt='terraform fmt -recursive'
 
 # ブランチの切り替え
 function git-branch-fzf() {
