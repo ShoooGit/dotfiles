@@ -63,6 +63,7 @@ alias gpush='git push'
 alias gpull='git pull'
 alias gcm='git commit -m'
 alias gch='git checkout'
+alias gdiff='git diff'
 alias tf='terraform'
 alias tfmt='terraform fmt -recursive'
 
@@ -81,3 +82,8 @@ function git-branch-fzf() {
 # tab+b
 zle -N git-branch-fzf
 bindkey '^Ib' git-branch-fzf
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/itayashuto/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/itayashuto/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/itayashuto/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/itayashuto/google-cloud-sdk/completion.zsh.inc'; fi
