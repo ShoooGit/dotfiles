@@ -14,14 +14,18 @@ git config --global user.email "shooo.ity.777@gmail.com"
 curl https://get.volta.sh | bash -s -- --skip-setup
 volta install node
 
-# fzf
-brew install fzf
-
 # ghq
 go install github.com/x-motemen/ghq@latest
 
-# sheldon
-brew install sheldon
 
 # Python
 curl -sSf https://rye-up.com/get | bash
+
+# brew
+brew install fzf
+brew install sheldon
+brew insatall tree
+brew install ynqa/tap/jnv
+brew install watch
+brew install clipy
+brew install deepl
